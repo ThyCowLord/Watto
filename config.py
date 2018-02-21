@@ -1,3 +1,4 @@
 consumer_token - 'xxxxxxx'
 consumer_secret = 'xxxxxxxx'
-report_email = 'xxxxxx@xxxx.com'
+email = 'xxxxxx@xxxx.com'
+password = 'xxxxxxxxxx'
