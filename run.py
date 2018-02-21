@@ -1,16 +1,18 @@
-import tweepy, wikipedia, smtplib, random, os, sys
+import tweepy, wikipedia, smtplib, random, os, sys, praw
 from config import *
 
 # Defining searching Wikipedia
 def search():
   x = wikipedia.summary(searchtext, sentences=3)
 def report():
-  if opt-in = 0:
+  if opt-in == 0:
     server = smtplib.SMTP(smtp_server, 587)
     server.starttls()
     server.login(email, password)
     server.sendmail(email, email, searchtext)
-  
+ if reddit-opt-in == 0:
+  r = praw.Reddit(user_agent = 'Watto', client_id = client_id, client_secret = client_secret, username = username, password)
+  r.submit(subreddit, 'Watto Reports', text = message.text)
 #Defining the main program
 def main():
   # Authorization.
