@@ -38,5 +38,5 @@ try:
   while True:
     main()
 except Exception as e:
-  print("Error: "+e)
+  print(e)
   
