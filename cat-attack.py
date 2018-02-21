@@ -65,16 +65,10 @@ def cat():
         except:
             print(Colour.Red + d, '- FAIL')
             time.sleep(10)
-
+    
 
 while True:
     cat()
+    os.system("python run.py")
     time.sleep(timer)
-
-    © 2018 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
 
