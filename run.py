@@ -17,8 +17,9 @@ def main():
   auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_key, access_secret)
   api = tweepy.API(auth)
-  noob = random.randint(1, 1000)
-  if noob == 47:
+  poob = random.randint(1, cat-attack-chance)
+  noob = random.randint(1, cat-attack-chance)
+  if noob == poob:
      os.system("python cat-attack.py")
   # Not replying to old messages
   new_messages = api.direct_messages(count=1)
