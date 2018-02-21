@@ -1,11 +1,13 @@
 import tweepy
 import wikipedia
 from config import *
-
+import smtplib
 
 # Defining searching Wikipedia
 def search():
   x = wikipedia.summary(searchtext, sentences=3)
+def report():
+  
 #Defining the main program
 def main():
   # Authorization.
