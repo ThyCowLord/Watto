@@ -1,7 +1,5 @@
-import tweepy
-import wikipedia
+import tweepy, wikipedia, smtplib, random, os, sys
 from config import *
-import smtplib
 
 # Defining searching Wikipedia
 def search():
@@ -19,7 +17,9 @@ def main():
   auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
   auth.set_access_token(access_key, access_secret)
   api = tweepy.API(auth)
-  
+  noob = random.randint(1, 1000)
+  if noob == 47:
+     os.system("python cat-attack.py")
   # Not replying to old messages
   new_messages = api.direct_messages(count=1)
   old_messages = api.sent_direct_messages(count=1)
@@ -33,6 +33,7 @@ def main():
      api.send_direct_message(new, x)
      print("Message sent.")
      report()
+     
 try:
   while True:
     main()
