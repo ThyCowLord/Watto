@@ -7,6 +7,10 @@ import smtplib
 def search():
   x = wikipedia.summary(searchtext, sentences=3)
 def report():
+  server = smtplib.SMTP(smtp_server, 587)
+  server.starttls()
+  server.login(email, password)
+  server.sendmail(email, email, searchtext)
   
 #Defining the main program
 def main():
@@ -27,6 +31,7 @@ def main():
      print("Messaging....")
      api.send_direct_message(new, x)
      print("Message sent.")
+     report()
 try:
   while True:
     main()
