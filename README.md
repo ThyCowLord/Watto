@@ -11,4 +11,4 @@ This is software. Use it, reuse it, hack it, edit it, eat it for dinner, I don't
 
 'LET ME EAT MY CAKE!' - ThyCowLord on copyright.
 ## Tutorial
-First, add your consumer token and consumer secret from apps.twitter.com to the config file. Than you run the file using "python run.py". If you want it to post to reddit, or email you, go ahead and add that to the config file.
+First, add your consumer token and consumer secret from apps.twitter.com to the config file. Install dependencies via sudo setup.py install, then run the program using python run.py. Also, keep the files in the same folder.
