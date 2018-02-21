@@ -6,5 +6,5 @@ setup(name='Watto',
       version='1.0',
       description='A Twitter answering bot',
       author='ThyCowLord and impshum',
-      packages=['wikipedia', 'praw', 'tweepy'],
+      packages=['wikipedia', 'tweepy'],
      )
