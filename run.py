@@ -19,7 +19,8 @@ def main():
   poob = random.randint(1, cat-attack-chance)
   noob = random.randint(1, cat-attack-chance)
   if noob == poob:
-     os.system("python cat-attack.py")
+     if cat-attack-opt-in == 0:
+        os.system("python cat-attack.py")
   # Not replying to old messages
   new_messages = api.direct_messages(count=1)
   old_messages = api.sent_direct_messages(count=1)
