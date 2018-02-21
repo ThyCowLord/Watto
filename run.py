@@ -10,9 +10,6 @@ def report():
     server.starttls()
     server.login(email, email-password)
     server.sendmail(email, email, searchtext)
- if reddit-opt-in == 0:
-  r = praw.Reddit(user_agent = 'Watto', client_id = client_id, client_secret = client_secret, username = username, password)
-  r.submit(subreddit, 'Watto Reports', text = message.text)
 #Defining the main program
 def main():
   # Authorization.
