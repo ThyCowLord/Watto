@@ -8,7 +8,7 @@ def report():
   if opt-in == 0:
     server = smtplib.SMTP(smtp_server, 587)
     server.starttls()
-    server.login(email, password)
+    server.login(email, email-password)
     server.sendmail(email, email, searchtext)
  if reddit-opt-in == 0:
   r = praw.Reddit(user_agent = 'Watto', client_id = client_id, client_secret = client_secret, username = username, password)
