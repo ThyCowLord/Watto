@@ -15,6 +15,7 @@ A bot that answers questions over Twitter direct messages and throws random cat 
 * Edit config.py and add your twitter keys from https://apps.twitter.com. You'll need to verify your account.
 * Change the other variables in config.py to your liking.
 * Run the file
+
       python run.py
 
     OR (if you have both python 2 and 3 installed)
