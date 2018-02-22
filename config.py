@@ -1,7 +1,14 @@
-consumer_token - 'xxxxxxx'
-consumer_secret = 'xxxxxxxx'
-email = 'xxxxxx@xxxx.com'
-email-password = 'xxxxxxxxxx'
-smtp_server = 'smtp.gmail.com' # Default is Gmail
-opt-in = 1 #Change to 0 for opt-in. For reporting 'n stuff
-cat-attack-chance = 1000 # Set your chances of a cat attack!
+# Get your Twitter keys from https://apps.twitter.com
+consumer_key = 'XXXX'
+consumer_secret = 'XXXX'
+access_key = 'XXXX-XXXX'
+access_secret = 'XXXX'
+
+# Random cat attack
+cat_attack = 1
+
+# Set chances of a cat attack!
+cat_attack_chance = 30
+
+# Time between checks in seconds
+sleep_timer = 15
